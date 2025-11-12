@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Inicio</a> |
+        <a href="/gastos">Gastos</a> |
+        <a href="/ahorro">Ahorro</a> |
+        <a href="/tips">Tips</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

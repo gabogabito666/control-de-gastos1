@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Consejos de Ahorro{% endblock %}
+{% block content %}
+    <h1>Consejos de Ahorro</h1>
+    <ul>
+        {% for consejo in consejos %}
+            <li>{{ consejo }}</li>
+        {% endfor %}
+    </ul>
+    <img src="..//static/OIP.jpeg" alt="ahorro " width="250"
+{% endblock %}

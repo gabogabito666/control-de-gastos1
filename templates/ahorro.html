@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Ahorro Semanal{% endblock %}
+{% block content %}
+    <h1>Ahorro Semanal</h1>
+    <form method="post">
+        <label for="capital">Capital:</label>
+        <input type="number" id="capital" name="capital" value="{{ capital }}">
+        <br><br>
+        <label for="ahorro">Ahorro Semanal:</label>
+        <input type="number" id="ahorro" name="ahorro" value="{{ ahorro }}">
+        <br><br>
+        <button type="submit">Calcular Total</button>
+    </form>
+    {% if total == "Entrada inválida" %}
+        <p style="color: red;"><b>Error:</b> Por favor, ingresa números válidos.</p>
+    {% else %}
+        <p><b>Total: ${{ total }}</b></p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Gastos Semanales{% endblock %}
+{% block content %}
+    <h1>Mis Gastos Semanales</h1>
+    <ul>
+        {% for gasto in gastos %}
+            <li>{{ gasto }}</li> {#  Aquí deberías mostrar los detalles del gasto #}
+        {% endfor %}
+    </ul>
+    <p><b>Total: ${{ total }}</b></p>
+{% endblock %}
